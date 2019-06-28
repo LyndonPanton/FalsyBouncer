@@ -4,7 +4,7 @@ window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
 	function bouncer(input) {
-		if (input.indexOf(", ") === -1 ) {
+		if (input.indexOf(", ") === -1 && !input.indexOf(" ") === -1) {
 			display("Literals must be separated with this: \", \"", "???");
 		} else {
 			input = input.split(", ");
