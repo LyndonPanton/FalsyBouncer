@@ -35,6 +35,10 @@ header {
 	display: none;
 }
 
+.task-text {
+	padding: 0.5vh 15vw;
+}
+
 .visible {
 	display: block;
 }
@@ -44,11 +48,6 @@ header {
 	z-index: 1;
 	background-color: #FBE29F;
 }
-
-#task-details {
-	padding: 0.5vh 15vw;
-}
-
 #task-extra {
 	text-decoration: underline;
 }
