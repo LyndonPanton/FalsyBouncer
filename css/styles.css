@@ -55,6 +55,48 @@ header {
 
 
 /* MAIN */
+input {
+	display: block;
+	margin: 0 auto 2vh;
+}
+
+main {
+	padding: 10vh 0;
+}
+
+#form-literal {
+	border: none;
+	border-bottom: 2px #FBE29F solid;
+	min-width: 60%;
+	padding: 1vh 0;
+	background-color: transparent;
+	text-align: center;
+	font-family: "Lucida Bright", Georgia, serif;
+	font-size: 1em;
+	color: black;
+}
+
+#form-literal:focus {
+	font-weight: bold;
+}
+
+#form-literal::placeholder {
+	font-style: italic;
+}
+
+#form-submit {
+	border: 2px #E8A09A solid;
+	border-radius: 5px;
+	padding: 1vh 5vw;
+	background-color: #C6D68F;
+	font-family: "Lucida Bright", Georgia, serif;
+	font-size: 1em;
+}
+
+#form-submit:active {
+	border-color: #FBE29F;
+	background-color: #9BBFE0;
+}
 
 
 
