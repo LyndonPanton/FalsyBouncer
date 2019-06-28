@@ -5,14 +5,19 @@ window.onload = function(event) {
 
 	function bouncer(input) {
 		if (input.indexOf(", ") === -1) {
-			return "Literals must be separated with this: \", \"";
+			display("Literals must be separated with this: \", \"", "???");
 		} else {
 			let bounced = input.split(", ").map(function(value) {
 				return Boolean(value);
 			});
 
-			return bounced;
+			return display(input, "[" + bounced.join(", ") + "]");
 		}
+	}
+
+	function display(original, bounced) {
+		document.getElementById("display-original-value").textContent = original
+		document.getElementById("display-bounced-value").textContent = bounced;
 	}
 
 	let form = document.getElementById("form");
