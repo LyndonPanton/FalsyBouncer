@@ -49,6 +49,10 @@ header {
 	padding: 0.5vh 15vw;
 }
 
+#task-extra {
+	text-decoration: underline;
+}
+
 #task-head {
 	text-decoration: underline;
 }
