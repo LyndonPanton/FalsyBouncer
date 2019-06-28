@@ -17,7 +17,7 @@ window.onload = function(event) {
 				return true;
 			}).join(", ");
 
-			return display("[" + input + "]", "[" + bounced + "]");
+			return display("[" + input.join(", ") + "]", "[" + bounced + "]");
 		}
 	}
 
