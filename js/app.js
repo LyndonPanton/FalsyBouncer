@@ -32,9 +32,15 @@ window.onload = function(event) {
 		if (Array.from(chevron.classList).indexOf("fa-chevron-up") === -1) {
 			chevron.classList.remove("fa-chevron-down");
 			chevron.classList.add("fa-chevron-up");
+
+			task.classList.remove("hidden");
+			task.classList.add("visible");
 		} else {
 			chevron.classList.remove("fa-chevron-up");
 			chevron.classList.add("fa-chevron-down");
+
+			task.classList.remove("visible");
+			task.classList.add("hidden");
 		}
 	}
 
