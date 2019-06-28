@@ -10,7 +10,7 @@ window.onload = function(event) {
 			input = input.split(", ");
 			console.log(input, Array.isArray(input));
 			let bounced = input.filter(function(value) {
-				if (value === "false" || value === "0" || value === "\"\"" || value === "null" || value === "undfined" || value === "NaN") {
+				if (value === "false" || value === "0" || value === "\"\"" || value === "null" || value === "undefined" || value === "NaN" || value === "") {
 					return false;
 				}
 
