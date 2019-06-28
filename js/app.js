@@ -4,14 +4,20 @@ window.onload = function(event) {
 	document.getElementById("copyright-year").textContent = (new Date()).getFullYear();
 
 	function bouncer(input) {
-		if (input.indexOf(", ") === -1) {
+		if (input.indexOf(", ") === -1 ) {
 			display("Literals must be separated with this: \", \"", "???");
 		} else {
-			let bounced = input.split(", ").map(function(value) {
-				return Boolean(value);
-			});
+			input = input.split(", ");
+			console.log(input, Array.isArray(input));
+			let bounced = input.filter(function(value) {
+				if (value === "false" || value === "0" || value === "\"\"" || value === "null" || value === "undfined" || value === "NaN") {
+					return false;
+				}
 
-			return display(input, "[" + bounced.join(", ") + "]");
+				return true;
+			}).join(", ");
+
+			return display("[" + input + "]", "[" + bounced + "]");
 		}
 	}
 
