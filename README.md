@@ -11,11 +11,11 @@
 > 2. Click the _Bounce_ button
 > 3. The origin values along with the values which have not been bounced will be displayed
 
-## Requirements
+## Requirements
 > 1. This project requires a browser to run
 > 2. The browser must have JavaScript available and enabled
 
-## Extra Information
+## Extra Information
 > 1. This was done for one of freecodecamp's Basic Algorithm Scripting activities
 
 ## Preview
