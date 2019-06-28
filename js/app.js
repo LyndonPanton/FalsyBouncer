@@ -27,7 +27,15 @@ window.onload = function(event) {
 	}
 
 	function toggle(chevron) {
+		let task = document.getElementById("task");
 
+		if (Array.from(chevron.classList).indexOf("fa-chevron-up") === -1) {
+			chevron.classList.remove("fa-chevron-down");
+			chevron.classList.add("fa-chevron-up");
+		} else {
+			chevron.classList.remove("fa-chevron-up");
+			chevron.classList.add("fa-chevron-down");
+		}
 	}
 
 	let form = document.getElementById("form");
