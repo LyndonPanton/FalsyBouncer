@@ -26,10 +26,19 @@ window.onload = function(event) {
 		document.getElementById("display-bounced-value").textContent = bounced;
 	}
 
+	function toggle(chevron) {
+
+	}
+
 	let form = document.getElementById("form");
 	form.addEventListener("submit", function(event) {
 		event.preventDefault();
 
 		bouncer(this.children[0].value);
+	});
+
+	let chevron = document.getElementsByClassName("fas")[0];
+	chevron.addEventListener("click", function(event) {
+		toggle(this);
 	});
 };
